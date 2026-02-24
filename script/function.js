@@ -81,9 +81,9 @@ function setBadge(card, status) {
 function activeTabs(btn) {
     tabs.querySelectorAll("button").forEach(c => {
         c.classList.remove("bg-[#3B82F6]", "text-white");
-        c.classList.add("bg-neutral-content");
+        c.classList.add("bg-neutral-content","bg-soft");
     });
-    btn.classList.remove("bg-neutral-content")
+    btn.classList.remove("bg-neutral-content","bg-soft")
     btn.classList.add("bg-[#3B82F6]", "text-white");
 }
 
