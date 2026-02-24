@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Job Application Tracker</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -19,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-base-200">
-    <main class="w-[80%] mx-auto px-4 py-6 space-y-6">
+    <main class="max-w-5xl mx-auto px-4 py-6 space-y-6">
       <!--heading-->
       <h1 class="text-[#002C5C] font-bold text-[32px]">
         Job Application Tracker
@@ -68,9 +68,9 @@
             <span id="jobCount">8</span> Jobs
           </p>
         </div>
-        <div id="tabs" class="bg-base-200 gap-3 w-fit">
+        <div id="tabs" class=" flex bg-base-200 gap-3 w-fit">
           <button
-            class=" px-6 py-2 text-sm font-semibold bg-[#3B82F6] text-white rounded-sm"
+            class="px-6 py-2 text-sm font-semibold bg-[#3B82F6] text-white rounded-sm"
             data-tab="All"
           >
             All
@@ -82,7 +82,7 @@
             Interview
           </button>
           <button
-            class=" bg-neutral-content bg-soft px-6 py-2 text-sm font-semibold rounded-sm"
+            class="bg-neutral-content bg-soft px-6 py-2 text-sm font-semibold rounded-sm"
             data-tab="Rejected"
           >
             Rejected
@@ -90,7 +90,10 @@
         </div>
       </section>
       <section id="allJobs" class="space-y-3">
-        <div class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm " data-id="1">
+        <div
+          class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm"
+          data-id="1"
+        >
           <div class="context space-y-3">
             <h2 class="text-[#002C5C] font-bold text-xl">Mobile First Corp</h2>
             <p class="text-neutral/70">React Native Developer</p>
@@ -99,25 +102,39 @@
               ><span> . </span>
               <span>$130,000 - $175,000</span>
             </div>
-            <div class="bg-neutral-content bg-soft w-fit p-2 rounded-sm" data-status>
-                <h2 class=" text-neutral font-semibold uppercase">Not Applied</h2>
+            <div
+              class="bg-neutral-content bg-soft w-fit p-2 rounded-sm"
+              data-status
+            >
+              <h2 class="text-neutral font-semibold uppercase">Not Applied</h2>
             </div>
             <p class="text-neutral font-semibold">
               Build cross-platform mobile applications using React Native. Work
               on products used by millions of users worldwide.
             </p>
             <div class="pt-5">
-              <button class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400">interview</button>
-              <button class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500">Rejected</button>
+              <button
+                class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400"
+              >
+                interview
+              </button>
+              <button
+                class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500"
+              >
+                Rejected
+              </button>
             </div>
           </div>
           <div>
             <button class="btnDelete">
-                <i class="fa-regular fa-trash-can"></i>
+              <i class="fa-regular fa-trash-can"></i>
             </button>
           </div>
         </div>
-        <div class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm " data-id="2">
+        <div
+          class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm"
+          data-id="2"
+        >
           <div class="context space-y-3">
             <h2 class="text-[#002C5C] font-bold text-xl">WebFlow Agency</h2>
             <p class="text-neutral/70">Web Designer & Developer</p>
@@ -126,24 +143,39 @@
               ><span> . </span>
               <span>$80,000 - $120,000</span>
             </div>
-            <div class="bg-neutral-content bg-soft w-fit p-2 rounded-sm" data-status>
-                <h2 class=" text-neutral font-semibold uppercase">Not Applied</h2>
+            <div
+              class="bg-neutral-content bg-soft w-fit p-2 rounded-sm"
+              data-status
+            >
+              <h2 class="text-neutral font-semibold uppercase">Not Applied</h2>
             </div>
             <p class="text-neutral font-semibold">
-              Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+              Create stunning web experiences for high-profile clients. Must
+              have portfolio and experience with modern web design trends.
             </p>
             <div class="pt-5">
-              <button class="btnInterview  px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400">interview</button>
-              <button class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500">Rejected</button>
+              <button
+                class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400"
+              >
+                interview
+              </button>
+              <button
+                class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500"
+              >
+                Rejected
+              </button>
             </div>
           </div>
           <div>
             <button class="btnDelete">
-                <i class="fa-regular fa-trash-can"></i>
+              <i class="fa-regular fa-trash-can"></i>
             </button>
           </div>
         </div>
-        <div class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm " data-id="3">
+        <div
+          class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm"
+          data-id="3"
+        >
           <div class="context space-y-3">
             <h2 class="text-[#002C5C] font-bold text-xl">DataViz Solutions</h2>
             <p class="text-neutral/70">Data Visualization Specialist</p>
@@ -152,24 +184,39 @@
               ><span> . </span>
               <span>$125,000 - $165,000</span>
             </div>
-            <div class="bg-neutral-content bg-soft w-fit p-2 rounded-sm" data-status>
-                <h2 class=" text-neutral font-semibold uppercase">Not Applied</h2>
+            <div
+              class="bg-neutral-content bg-soft w-fit p-2 rounded-sm"
+              data-status
+            >
+              <h2 class="text-neutral font-semibold uppercase">Not Applied</h2>
             </div>
             <p class="text-neutral font-semibold">
-              Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.
+              Transform complex data into compelling visualizations. Required
+              skills: D3.js, React, and strong analytical thinking.
             </p>
             <div class="pt-5">
-              <button class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400">interview</button>
-              <button class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500">Rejected</button>
+              <button
+                class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400"
+              >
+                interview
+              </button>
+              <button
+                class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500"
+              >
+                Rejected
+              </button>
             </div>
           </div>
           <div>
             <button class="btnDelete">
-                <i class="fa-regular fa-trash-can"></i>
+              <i class="fa-regular fa-trash-can"></i>
             </button>
           </div>
         </div>
-        <div class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm " data-id="4">
+        <div
+          class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm"
+          data-id="4"
+        >
           <div class="context space-y-3">
             <h2 class="text-[#002C5C] font-bold text-xl">CloudFirst Inc</h2>
             <p class="text-neutral/70">Backend Developer</p>
@@ -178,50 +225,81 @@
               ><span> . </span>
               <span>$140,000 - $190,000</span>
             </div>
-            <div class="bg-neutral-content bg-soft w-fit p-2 rounded-sm" data-status>
-                <h2 class=" text-neutral font-semibold uppercase">Not Applied</h2>
+            <div
+              class="bg-neutral-content bg-soft w-fit p-2 rounded-sm"
+              data-status
+            >
+              <h2 class="text-neutral font-semibold uppercase">Not Applied</h2>
             </div>
             <p class="text-neutral font-semibold">
-              Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.
+              Design and maintain scalable backend systems using Python and AWS.
+              Work with modern DevOps practices and cloud infrastructure.
             </p>
             <div class="pt-5">
-              <button class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400">interview</button>
-              <button class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500">Rejected</button>
+              <button
+                class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400"
+              >
+                interview
+              </button>
+              <button
+                class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500"
+              >
+                Rejected
+              </button>
             </div>
           </div>
           <div>
             <button class="btnDelete">
-                <i class="fa-regular fa-trash-can"></i>
+              <i class="fa-regular fa-trash-can"></i>
             </button>
           </div>
         </div>
-        <div class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm " data-id="5">
+        <div
+          class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm"
+          data-id="5"
+        >
           <div class="context space-y-3">
             <h2 class="text-[#002C5C] font-bold text-xl">Innovation Labs</h2>
-            <p class="text-neutral/70">UI/UX Engineerr</p>
+            <p class="text-neutral/70">UI/UX Engineer</p>
             <div class="pt-3 text-neutral/70">
               <span>Austin, TX</span><span> . </span> <span>Full-time</span
               ><span> . </span>
               <span>$110,000 - $150,000</span>
             </div>
-            <div class="bg-neutral-content bg-soft w-fit p-2 rounded-sm" data-status>
-                <h2 class=" text-neutral font-semibold uppercase">Not Applied</h2>
+            <div
+              class="bg-neutral-content bg-soft w-fit p-2 rounded-sm"
+              data-status
+            >
+              <h2 class="text-neutral font-semibold uppercase">Not Applied</h2>
             </div>
             <p class="text-neutral font-semibold">
-             Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.
+              Create beautiful and functional user interfaces for our suite of
+              products. Strong design skills and frontend development expertise
+              required.
             </p>
             <div class="pt-5">
-              <button class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400">interview</button>
-              <button class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500">Rejected</button>
+              <button
+                class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400"
+              >
+                interview
+              </button>
+              <button
+                class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500"
+              >
+                Rejected
+              </button>
             </div>
           </div>
           <div>
             <button class="btnDelete">
-                <i class="fa-regular fa-trash-can"></i>
+              <i class="fa-regular fa-trash-can"></i>
             </button>
           </div>
         </div>
-        <div class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm " data-id="6">
+        <div
+          class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm"
+          data-id="6"
+        >
           <div class="context space-y-3">
             <h2 class="text-[#002C5C] font-bold text-xl">MegaCorp Solutions</h2>
             <p class="text-neutral/70">JavaScript Developer</p>
@@ -230,24 +308,40 @@
               ><span> . </span>
               <span>$130,000 - $170,00</span>
             </div>
-            <div class="bg-neutral-content bg-soft w-fit p-2 rounded-sm" data-status>
-                <h2 class=" text-neutral font-semibold uppercase">Not Applied</h2>
+            <div
+              class="bg-neutral-content bg-soft w-fit p-2 rounded-sm"
+              data-status
+            >
+              <h2 class="text-neutral font-semibold uppercase">Not Applied</h2>
             </div>
             <p class="text-neutral font-semibold">
-              Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.
+              Build enterprise applications with JavaScript and modern
+              frameworks. We offer competitive compensation, health insurance,
+              and professional development opportunities.
             </p>
             <div class="pt-5">
-              <button class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400">interview</button>
-              <button class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500">Rejected</button>
+              <button
+                class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400"
+              >
+                interview
+              </button>
+              <button
+                class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500"
+              >
+                Rejected
+              </button>
             </div>
           </div>
           <div>
             <button class="btnDelete">
-                <i class="fa-regular fa-trash-can"></i>
+              <i class="fa-regular fa-trash-can"></i>
             </button>
           </div>
         </div>
-        <div class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm " data-id="7">
+        <div
+          class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm"
+          data-id="7"
+        >
           <div class="context space-y-3">
             <h2 class="text-[#002C5C] font-bold text-xl">StartupXYZ</h2>
             <p class="text-neutral/70">Full Stack Engineer</p>
@@ -256,98 +350,77 @@
               ><span> . </span>
               <span>$120,000 - $160,000</span>
             </div>
-            <div class="bg-neutral-content bg-soft w-fit p-2 rounded-sm" data-status>
-                <h2 class=" text-neutral font-semibold uppercase">Not Applied</h2>
+            <div
+              class="bg-neutral-content bg-soft w-fit p-2 rounded-sm"
+              data-status
+            >
+              <h2 class="text-neutral font-semibold uppercase">Not Applied</h2>
             </div>
             <p class="text-neutral font-semibold">
-              Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.
+              Join our fast-growing startup and work on our core platform.
+              Experience with Node.js and React required. Great benefits and
+              equity package included.
             </p>
             <div class="pt-5">
-              <button class="btnInterview  px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400">interview</button>
-              <button class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500">Rejected</button>
+              <button
+                class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400"
+              >
+                interview
+              </button>
+              <button
+                class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500"
+              >
+                Rejected
+              </button>
             </div>
           </div>
           <div>
             <button class="btnDelete">
-                <i class="fa-regular fa-trash-can"></i>
+              <i class="fa-regular fa-trash-can"></i>
             </button>
           </div>
         </div>
-        <div class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm " data-id="8">
+        <div
+          class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm"
+          data-id="8"
+        >
           <div class="context space-y-3">
-            <h2 class="text-[#002C5C] font-bold text-xl">TechCorp Industries</h2>
+            <h2 class="text-[#002C5C] font-bold text-xl">
+              TechCorp Industries
+            </h2>
             <p class="text-neutral/70">Senior Frontend Developer</p>
             <div class="pt-3 text-neutral/70">
-              <span>San Francisco, CA</span><span> . </span> <span>Full-time</span
-              ><span> . </span>
+              <span>San Francisco, CA</span><span> . </span>
+              <span>Full-time</span><span> . </span>
               <span>$130,000 - $175,000</span>
             </div>
-            <div class="bg-neutral-content bg-soft w-fit p-2 rounded-sm" data-status>
-                <h2 class=" text-neutral font-semibold uppercase">Not Applied</h2>
+            <div
+              class="bg-neutral-content bg-soft w-fit p-2 rounded-sm"
+              data-status
+            >
+              <h2 class="text-neutral font-semibold uppercase">Not Applied</h2>
             </div>
             <p class="text-neutral font-semibold">
-             We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
+              We are looking for an experienced Frontend Developer to build
+              scalable web applications using React and TypeScript. You will
+              work with a talented team on cutting-edge projects.
             </p>
-            <div class="pt-5 ">
-              <button class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400">interview</button>
-              <button class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500">Rejected</button>
+            <div class="pt-5">
+              <button
+                class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400"
+              >
+                interview
+              </button>
+              <button
+                class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500"
+              >
+                Rejected
+              </button>
             </div>
           </div>
           <div>
             <button class="btnDelete">
-                <i class="fa-regular fa-trash-can"></i>
-            </button>
-          </div>
-        </div>
-        <div class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm " data-id="9">
-          <div class="context space-y-3">
-            <h2 class="text-[#002C5C] font-bold text-xl">NextWave Solutions</h2>
-            <p class="text-neutral/70">Frontend Developer</p>
-            <div class="pt-3 text-neutral/70">
-              <span>Austin, TX</span><span> . </span> <span>Full-time</span
-              ><span> . </span>
-              <span>$110,000 - $145,000</span>
-            </div>
-            <div class="bg-neutral-content bg-soft w-fit p-2 rounded-sm" data-status>
-                <h2 class=" text-neutral font-semibold uppercase">Not Applied</h2>
-            </div>
-            <p class="text-neutral font-semibold">
-            Develop responsive and interactive user interfaces using modern JavaScript frameworks. Collaborate closely with designers and backend engineers.
-            </p>
-            <div class="pt-5 ">
-              <button class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400">interview</button>
-              <button class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500">Rejected</button>
-            </div>
-          </div>
-          <div>
-            <button class="btnDelete">
-                <i class="fa-regular fa-trash-can"></i>
-            </button>
-          </div>
-        </div>
-        <div class="flex justify-between bg-base-100 border border-base-300 shadow-sm p-6 rounded-sm " data-id="10">
-          <div class="context space-y-3">
-            <h2 class="text-[#002C5C] font-bold text-xl">CloudNova Systems</h2>
-            <p class="text-neutral/70">Backend Developer</p>
-            <div class="pt-3 text-neutral/70">
-              <span>Seattle, WA</span><span> . </span> <span>Full-time</span
-              ><span> . </span>
-              <span>$130,000 - $175,000</span>
-            </div>
-            <div class="bg-neutral-content bg-soft w-fit p-2 rounded-sm" data-status>
-                <h2 class=" text-neutral font-semibold uppercase">Not Applied</h2>
-            </div>
-            <p class="text-neutral font-semibold">
-            Design scalable APIs and manage cloud infrastructure. Experience with databases, authentication systems, and performance optimization required.
-            </p>
-            <div class="pt-5 ">
-              <button class="btnInterview px-5 py-2 text-sm font-semibold border border-2 border-green-400 rounded-sm uppercase text-green-400">interview</button>
-              <button class="btnRejected px-5 py-2 text-sm font-semibold border border-2 border-red-500 rounded-sm uppercase text-red-500">Rejected</button>
-            </div>
-          </div>
-          <div>
-            <button class="btnDelete">
-                <i class="fa-regular fa-trash-can"></i>
+              <i class="fa-regular fa-trash-can"></i>
             </button>
           </div>
         </div>
